@@ -26,21 +26,6 @@
   </div>
 </div>
 
-<!--I have no idea where this section came from-->
-<!--<div class="col-xs-12">-->
-<!--<div class="btn-group" appDropdown>-->
-<!--<button type="button" class="btn btn-primary dropdown-toggle">Dropdown-->
-<!--<span class="caret">-->
-<!--</span>-->
-<!--</button>-->
-<!--<ul class="dropdown-menu">-->
-<!--<li><a href="#">To Shopping List</a></li>-->
-<!--<li><a href="#">Edit</a></li>-->
-<!--<li><a href="#">Whatever</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
-
 <div class="row">
   <div class="col-xs-12">
     {{ recipe.description }}
@@ -54,48 +39,12 @@
       <h2>Ingredients</h2>
     </mat-toolbar>
   </div>
-<div class="col-xs-12">
-  <mat-list>
-    <mat-list-item *ngFor="let ingredient of ingredients">
-      {{ ingredient.name }} - {{ ingredient.amount }}
-    </mat-list-item>
-  </mat-list>
-</div>
-  <!--</mat-toolbar>-->
-  <!--&lt;!&ndash;<p *ngFor="let ingredient of ingredients"> {{ingredient.amount}}</p>&ndash;&gt;-->
-
-  <!--<div class="example-container mat-elevation-z8">-->
-  <!--<mat-table #table [dataSource]="dataSource">-->
-
-  <!--&lt;!&ndash;- Note that these columns can be defined in any order.-->
-  <!--The actual rendered columns are set as a property on the row definition" &ndash;&gt;-->
-
-  <!--&lt;!&ndash; Position Column &ndash;&gt;-->
-  <!--&lt;!&ndash;<ng-container matColumnDef="position">&ndash;&gt;-->
-  <!--&lt;!&ndash;<mat-header-cell *matHeaderCellDef> No. </mat-header-cell>&ndash;&gt;-->
-  <!--&lt;!&ndash;<mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>&ndash;&gt;-->
-  <!--&lt;!&ndash;</ng-container>&ndash;&gt;-->
-
-  <!--&lt;!&ndash; Name Column &ndash;&gt;-->
-  <!--<ng-container matColumnDef="name">-->
-  <!--<mat-header-cell *matHeaderCellDef> Name </mat-header-cell>-->
-  <!--<mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>-->
-  <!--</ng-container>-->
-
-  <!--&lt;!&ndash; Weight Column &ndash;&gt;-->
-  <!--<ng-container matColumnDef="amount">-->
-  <!--<mat-header-cell *matHeaderCellDef> Amount </mat-header-cell>-->
-  <!--<mat-cell *matCellDef="let element"> {{element.amount}} </mat-cell>-->
-  <!--</ng-container>-->
-
-  <!--&lt;!&ndash; Symbol Column &ndash;&gt;-->
-  <!--&lt;!&ndash;<ng-container matColumnDef="symbol">&ndash;&gt;-->
-  <!--&lt;!&ndash;<mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>&ndash;&gt;-->
-  <!--&lt;!&ndash;<mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>&ndash;&gt;-->
-  <!--&lt;!&ndash;</ng-container>&ndash;&gt;-->
-
-  <!--<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>-->
-  <!--<mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>-->
-  <!--</mat-table>-->
+  <div class="col-xs-12">
+    <mat-list>
+      <mat-list-item *ngFor="let ingredient of ingredients">
+        {{ ingredient.name }} - {{ ingredient.amount }}
+      </mat-list-item>
+    </mat-list>
+  </div>
 </div>
 
